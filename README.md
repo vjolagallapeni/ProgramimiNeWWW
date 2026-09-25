@@ -64,7 +64,7 @@ Faqja u testua përmes serverit lokal me DevTools → Network.
 
 **Method:** GET
 
-**Status:** 200 OK
+**Status:** 304 Not Modified
 
 ## Reflektim individual
 
