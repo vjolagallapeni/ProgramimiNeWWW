@@ -1,0 +1,124 @@
+/* Muzeu i sendeve — stili */
+:root {
+  --sfondi: #f4f7fb;
+  --karta: #ffffff;
+  --teksti: #1b2433;
+  --titulli: #14213d;
+  --aksenti: #0f766e;
+  --lidhja: #1769aa;
+  --kufiri: #cfd8e6;
+  --kutia-img: #f1f3f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: var(--sfondi);
+  color: var(--teksti);
+  line-height: 1.6;
+}
+
+/* Lidhja "Kalo te përmbajtja" shfaqet vetëm kur merr fokus */
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--karta);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+
+header {
+  max-width: 62rem;
+  border-bottom: 2px solid var(--aksenti);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+header p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+}
+h1 {
+  margin: 0;
+  color: var(--titulli);
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+}
+a {
+  color: var(--lidhja);
+}
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--aksenti);
+  outline-offset: 2px;
+}
+
+.data {
+  font-size: 0.9rem;
+  margin: 0 0 1.25rem;
+}
+
+/* Tre karta në rresht; në ekran të ngushtë kalojnë njëra nën tjetrën */
+.kartat {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 17rem));
+  gap: 1rem;
+  max-width: 62rem;
+}
+
+.karta {
+  background: var(--karta);
+  border: 1px solid var(--kufiri);
+  border-radius: 10px;
+  padding: 1.5rem 1.25rem 1rem;
+}
+.karta h2 {
+  margin: 0 0 1rem;
+  color: var(--titulli);
+  font-size: 1.25rem;
+}
+.karta img {
+  display: block;
+  width: 165px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
+  background: var(--kutia-img);
+}
+.karta p {
+  margin: 0 0 1rem;
+  padding: 0 1.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+details {
+  font-size: 0.9rem;
+}
+summary {
+  cursor: pointer;
+}
+details p {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  text-align: left;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
