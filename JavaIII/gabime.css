@@ -1,0 +1,11 @@
+
+.poster {
+  color: var(--ink);
+  background: var(--surface);
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+  padding: clamp(1rem, 5vw, 5rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
