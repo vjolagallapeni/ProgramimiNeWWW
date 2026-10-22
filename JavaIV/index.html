@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Festivali që përshtatet në çdo ekran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Kalo te përmbajtja</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <p class="eyebrow">Programimi në WWW · Java IV</p>
+        <h1>Festivali që përshtatet në çdo ekran</h1>
+        <nav class="menu" aria-label="Menuja kryesore">
+          <ul>
+            <li><a href="#programi" aria-current="page">Programi</a></li>
+            <li><a href="#detajet">Detajet</a></li>
+            <li><a href="#vendi">Vendi</a></li>
+            <li><a href="#rreth">Rreth festivalit</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <figure class="hero">
+        <img
+          src="assets/festivali.svg"
+          alt="Ilustrim i festivalit shkencor me një planet, një atom dhe yje"
+          width="1200"
+          height="400"
+        />
+        <figcaption>Festivali Shkencor i Prishtinës · 14–15 nëntor</figcaption>
+      </figure>
+
+      <section id="programi" aria-labelledby="programi-titulli">
+        <h2 id="programi-titulli">Programi i aktiviteteve</h2>
+
+        <ul class="cards">
+          <li>
+            <article class="card">
+              <p class="card__cat">Astronomi</p>
+              <h3 class="card__title">Natë me teleskopë në oborrin e universitetit</h3>
+              <p class="card__time">
+                <time datetime="2026-11-14T19:00">E premte, 19:00</time>–<time datetime="2026-11-14T21:00">21:00</time>
+              </p>
+              <a class="card__link" href="#d1">Detajet<span class="sr-only"> për Natë me teleskopë</span></a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <p class="card__cat">Kimi</p>
+              <h3 class="card__title">Eksperimente me ngjyra</h3>
+              <p class="card__time">
+                <time datetime="2026-11-14T10:00">E premte, 10:00</time>–<time datetime="2026-11-14T11:30">11:30</time>
+              </p>
+              <a class="card__link" href="#d2">Detajet<span class="sr-only"> për Eksperimente me ngjyra</span></a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <p class="card__cat">Robotikë</p>
+              <h3 class="card__title">Ndërto robotin tënd të parë me sensorë dhe motorë</h3>
+              <p class="card__time">
+                <time datetime="2026-11-14T12:00">E premte, 12:00</time>–<time datetime="2026-11-14T14:00">14:00</time>
+              </p>
+              <a class="card__link" href="#d3">Detajet<span class="sr-only"> për Ndërto robotin tënd</span></a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <!-- Sfida e transferimit: titull me saktësisht 100 karaktere -->
+              <p class="card__cat">Biologji</p>
+              <h3 class="card__title">Mikrobiologjia e përditshme: si bakteret e dobishme ndihmojnë shëndetin, ushqimin dhe ambientin tonë</h3>
+              <p class="card__time">
+                <time datetime="2026-11-15T10:00">E shtunë, 10:00</time>–<time datetime="2026-11-15T11:00">11:00</time>
+              </p>
+              <a class="card__link" href="#d4">Detajet<span class="sr-only"> për Mikrobiologjia e përditshme</span></a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <p class="card__cat">Fizikë</p>
+              <h3 class="card__title">Elektromagnetizmi‑në‑praktikë‑me‑bobina‑Tesla‑dhe‑shkëndija</h3>
+              <p class="card__time">
+                <time datetime="2026-11-15T13:00">E shtunë, 13:00</time>–<time datetime="2026-11-15T14:30">14:30</time>
+              </p>
+              <a class="card__link" href="#d5">Detajet<span class="sr-only"> për Elektromagnetizmi në praktikë</span></a>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <p class="card__cat">Informatikë</p>
+              <h3 class="card__title">Hackathon i shkurtër: aplikacion për klimën</h3>
+              <p class="card__time">
+                <time datetime="2026-11-15T15:00">E shtunë, 15:00</time>–<time datetime="2026-11-15T18:00">18:00</time>
+              </p>
+              <a class="card__link" href="#d6">Detajet<span class="sr-only"> për Hackathon i shkurtër</span></a>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="detajet" aria-labelledby="detajet-titulli">
+        <h2 id="detajet-titulli">Detajet</h2>
+        <dl class="details">
+          <dt id="d1">Natë me teleskopë</dt>
+          <dd>Vëzhgim i Hënës dhe Saturnit me teleskopë të klubit të astronomisë. Nëse ka re, aktiviteti zhvendoset në planetarium.</dd>
+          <dt id="d2">Eksperimente me ngjyra</dt>
+          <dd>Indikatorë pH nga lakra e kuqe dhe kromatografi me letër. Për moshat 10+.</dd>
+          <dt id="d3">Ndërto robotin tënd</dt>
+          <dd>Punëtori me pllaka mikrokontrollerësh; materialet sigurohen nga organizatorët. Vende të kufizuara: 20.</dd>
+          <dt id="d4">Mikrobiologjia e përditshme</dt>
+          <dd>Ligjëratë e shkurtër dhe vëzhgim me mikroskop i kulturave të kosit dhe brumit të thartë.</dd>
+          <dt id="d5">Elektromagnetizmi në praktikë</dt>
+          <dd>Demonstrim me bobinë Tesla. Shikuesit qëndrojnë pas vijës së sigurisë.</dd>
+          <dt id="d6">Hackathon i shkurtër</dt>
+          <dd>Ekipe 3–4 vetëshe ndërtojnë një prototip për monitorimin e cilësisë së ajrit. Sillni laptopin.</dd>
+        </dl>
+      </section>
+
+      <section id="vendi" aria-labelledby="vendi-titulli">
+        <h2 id="vendi-titulli">Vendi</h2>
+        <p>Fakulteti i Shkencave Matematike-Natyrore, Prishtinë. Hyrja falas.</p>
+      </section>
+
+      <section id="rreth" aria-labelledby="rreth-titulli">
+        <h2 id="rreth-titulli">Rreth festivalit</h2>
+        <p>Dy ditë me aktivitete praktike për nxënës, studentë dhe familje.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">Shembull mësimor · Të dhëna të sajuara · Vetëm front end</div>
+    </footer>
+  </body>
+</html>
