@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ngjyra: #0f6b5c;
+  --teksti: #14213d;
+  --sfondi: #f4f7fb;
+  --kufiri: #b8bfcc;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 1rem 2.5rem;
+  background: var(--sfondi);
+  color: var(--teksti);
+  line-height: 1.5;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+header {
+  border-bottom: 2px solid var(--ngjyra);
+  padding: 0 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+header p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+header h1 {
+  margin: 0.25rem 0 0;
+}
+
+main {
+  padding: 0 1.5rem;
+  max-width: 70rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 12.5rem;
+  padding: 0.6rem 0.5rem;
+  border: 1px solid var(--kufiri);
+  border-radius: 4px;
+  font: inherit;
+}
+.i-shkurter {
+  width: 4.75rem !important;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f2a900;
+  outline-offset: 2px;
+}
+
+/* Fusha e plotësuar gabim, pasi përdoruesi ka shkruar diçka */
+input:user-invalid {
+  border-color: #b3261e;
+  background: #fff5f5;
+}
+
+fieldset {
+  border: 1px solid var(--kufiri);
+  padding: 0.25rem 1rem;
+  margin: 1rem 0;
+}
+fieldset p,
+p:has(> input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+fieldset label,
+p:has(> input[type="checkbox"]) label {
+  display: inline;
+  margin: 0;
+}
+
+.kujdes {
+  font-size: 0.9rem;
+  border-left: 4px solid #f2a900;
+  background: #fff8e6;
+  padding: 0.5rem 0.75rem;
+}
+
+button {
+  background: var(--ngjyra);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+button:hover {
+  background: #0b5246;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: #fff;
+}
+caption {
+  margin-bottom: 0.25rem;
+}
+th,
+td {
+  border: 1px solid var(--kufiri);
+  padding: 0.6rem;
+  text-align: left;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1rem;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+  header,
+  main {
+    padding: 0;
+  }
+}
